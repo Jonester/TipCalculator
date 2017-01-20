@@ -21,9 +21,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mkw-Yc-2Ha">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mkw-Yc-2Ha">
                                 <rect key="frame" x="62" y="420" width="250" height="60"/>
-                                <color key="backgroundColor" red="0.72149890660000005" green="0.7216190696" blue="0.72147327660000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.963817298412323" green="0.93553770250604851" blue="0.81798032846599722" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="BRL-d4-kIB"/>
                                     <constraint firstAttribute="width" constant="250" id="vhc-zn-XiR"/>
@@ -34,7 +34,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib8-t6-nkF">
                                 <rect key="frame" x="62" y="510" width="250" height="60"/>
-                                <color key="backgroundColor" red="0.81668501449999997" green="0.95352330760000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.57074089598414413" green="0.92362618297344523" blue="0.97680455446243286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="2Ct-nv-uZe"/>
                                     <constraint firstAttribute="height" constant="60" id="jUh-Jc-pmC"/>
@@ -46,11 +46,12 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4R-up-xjG">
                                 <rect key="frame" x="62" y="70" width="250" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="16b-7k-eIi"/>
                                     <constraint firstAttribute="width" constant="250" id="QvC-Av-sc3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -65,7 +66,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.87834872090000005" green="1" blue="0.94612243760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ib8-t6-nkF" firstAttribute="top" secondItem="Mkw-Yc-2Ha" secondAttribute="bottom" constant="30" id="H50-yu-4bY"/>
                             <constraint firstItem="RxC-7Q-Kjo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KQG-07-8Ab"/>

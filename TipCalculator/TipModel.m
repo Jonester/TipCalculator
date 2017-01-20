@@ -10,15 +10,21 @@
 
 @interface TipModel ()
 
-@property (nonatomic, assign) float tipAmount;
+@property (nonatomic, strong) NSNumber *tipAmount;
 
 @end
 
 @implementation TipModel
 
 -(NSString *)calculateTip: (NSString *)billAmount tipPercent: (NSString *)tipPercent {
-    self.tipAmount = [billAmount floatValue] * [tipPercent floatValue]/100;
-    return [NSString stringWithFormat:@"$%.2f", self.tipAmount];
+    self.tipAmount = @([billAmount floatValue] * [tipPercent floatValue]/100);
+    
+    NSNumberFormatter *currencyFormat = [NSNumberFormatter new];
+    [currencyFormat setNumberStyle:NSNumberFormatterCurrencyStyle];
+    
+    return [currencyFormat stringFromNumber:self.tipAmount];
+    
+    
 }
 
 
