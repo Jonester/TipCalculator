@@ -13,6 +13,7 @@
 		3CDA7FDD1E327071002F6900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CDA7FDB1E327071002F6900 /* Main.storyboard */; };
 		3CDA7FDF1E327071002F6900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CDA7FDE1E327071002F6900 /* Assets.xcassets */; };
 		3CDA7FE21E327071002F6900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CDA7FE01E327071002F6900 /* LaunchScreen.storyboard */; };
+		3CDA7FEB1E327373002F6900 /* TipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA7FEA1E327373002F6900 /* TipModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		3CDA7FDE1E327071002F6900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CDA7FE11E327071002F6900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CDA7FE31E327071002F6900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CDA7FE91E327373002F6900 /* TipModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipModel.h; sourceTree = "<group>"; };
+		3CDA7FEA1E327373002F6900 /* TipModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				3CDA7FD61E327071002F6900 /* AppDelegate.m */,
 				3CDA7FD81E327071002F6900 /* ViewController.h */,
 				3CDA7FD91E327071002F6900 /* ViewController.m */,
+				3CDA7FE91E327373002F6900 /* TipModel.h */,
+				3CDA7FEA1E327373002F6900 /* TipModel.m */,
 				3CDA7FDB1E327071002F6900 /* Main.storyboard */,
 				3CDA7FDE1E327071002F6900 /* Assets.xcassets */,
 				3CDA7FE01E327071002F6900 /* LaunchScreen.storyboard */,
@@ -153,6 +158,7 @@
 				3CDA7FDA1E327071002F6900 /* ViewController.m in Sources */,
 				3CDA7FD71E327071002F6900 /* AppDelegate.m in Sources */,
 				3CDA7FD41E327071002F6900 /* main.m in Sources */,
+				3CDA7FEB1E327373002F6900 /* TipModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
