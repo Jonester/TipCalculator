@@ -13,7 +13,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *billAmountTextField;
 @property (weak, nonatomic) IBOutlet UITextField *tipPercentTextField;
 @property (weak, nonatomic) IBOutlet UILabel *tipAmountLabel;
-
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
+@property (nonatomic, readonly) CGFloat oldConstraint;
 
 @end
 
@@ -25,6 +26,12 @@
     [self.tipPercentTextField setKeyboardType:UIKeyboardTypeDecimalPad];
     self.billAmountTextField.delegate = self;
     self.tipPercentTextField.delegate = self;
+    
+    NSNotificationCenter *notifyCenter = [NSNotificationCenter defaultCenter];
+    [notifyCenter addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidChangeFrameNotification object:nil];
+    
+    _oldConstraint = self.bottomConstraint.constant;
+    
 }
 
 
@@ -51,5 +58,23 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
+}
+
+-(void)keyboardDidShow:(NSNotification*)notification {
+    NSValue *keyboardrect = notification.userInfo[UIKeyboardFrameEndUserInfoKey];
+    CGRect rect = keyboardrect.CGRectValue;
+    CGFloat yPos = rect.origin.y;
+    CGFloat screenHeight = self.view.bounds.size.height;
+    
+    if (yPos == screenHeight) {
+        self.bottomConstraint.constant = self.oldConstraint;
+    } else {
+        self.bottomConstraint.constant = (screenHeight - yPos) + 30;
+    }
+    NSLog(@"%f %f", screenHeight, yPos);
+}
+
+-(void) dealloc {
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
 @end

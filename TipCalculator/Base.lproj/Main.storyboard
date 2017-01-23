@@ -22,22 +22,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mkw-Yc-2Ha">
-                                <rect key="frame" x="62" y="420" width="250" height="60"/>
+                                <rect key="frame" x="62.5" y="417" width="250" height="60"/>
                                 <color key="backgroundColor" red="0.963817298412323" green="0.93553770250604851" blue="0.81798032846599722" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="BRL-d4-kIB"/>
-                                    <constraint firstAttribute="width" constant="250" id="vhc-zn-XiR"/>
+                                    <constraint firstAttribute="width" constant="250" id="4Uh-9V-BbG"/>
+                                    <constraint firstAttribute="height" constant="60" id="Gol-Hh-kD6"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib8-t6-nkF">
-                                <rect key="frame" x="62" y="510" width="250" height="60"/>
+                                <rect key="frame" x="62.5" y="507" width="250" height="60"/>
                                 <color key="backgroundColor" red="0.57074089598414413" green="0.92362618297344523" blue="0.97680455446243286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="2Ct-nv-uZe"/>
-                                    <constraint firstAttribute="height" constant="60" id="jUh-Jc-pmC"/>
+                                    <constraint firstAttribute="width" constant="250" id="Xwz-1o-ZZV"/>
+                                    <constraint firstAttribute="height" constant="60" id="g2H-jb-HfZ"/>
                                 </constraints>
                                 <state key="normal" title="Calculate Tip"/>
                                 <connections>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4R-up-xjG">
-                                <rect key="frame" x="62" y="70" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="70" width="250" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="16b-7k-eIi"/>
@@ -68,18 +68,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.87834872090000005" green="1" blue="0.94612243760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ib8-t6-nkF" firstAttribute="top" secondItem="Mkw-Yc-2Ha" secondAttribute="bottom" constant="30" id="H50-yu-4bY"/>
                             <constraint firstItem="RxC-7Q-Kjo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KQG-07-8Ab"/>
-                            <constraint firstItem="ib8-t6-nkF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LpD-Dx-YYf"/>
+                            <constraint firstItem="ib8-t6-nkF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MoX-oh-AuV"/>
                             <constraint firstItem="RxC-7Q-Kjo" firstAttribute="top" secondItem="k4R-up-xjG" secondAttribute="bottom" constant="50" id="TZl-rg-FxS"/>
-                            <constraint firstItem="Mkw-Yc-2Ha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YY1-IW-Stf"/>
-                            <constraint firstItem="Mkw-Yc-2Ha" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="400" id="iZH-5n-cv6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ib8-t6-nkF" secondAttribute="bottom" constant="100" id="dKO-cW-dbo"/>
                             <constraint firstItem="k4R-up-xjG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="l0V-qu-3Rl"/>
                             <constraint firstItem="k4R-up-xjG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oUn-VC-SbJ"/>
+                            <constraint firstItem="Mkw-Yc-2Ha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKE-wz-Ihc"/>
+                            <constraint firstItem="ib8-t6-nkF" firstAttribute="top" secondItem="Mkw-Yc-2Ha" secondAttribute="bottom" constant="30" id="xdP-Uy-qGr"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="billAmountTextField" destination="Mkw-Yc-2Ha" id="rRI-5M-OJc"/>
+                        <outlet property="bottomConstraint" destination="dKO-cW-dbo" id="fEh-C9-wlO"/>
                         <outlet property="tipAmountLabel" destination="k4R-up-xjG" id="zub-Xk-PjB"/>
                         <outlet property="tipPercentTextField" destination="RxC-7Q-Kjo" id="vRM-9p-IX6"/>
                     </connections>
